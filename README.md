@@ -30,13 +30,16 @@ Uses `HashRouter`, so `dist/` works from any static host or even `file://`.
 
 ## Deploy
 
-Hosted at **sharathkrml.com**. Run `npm run build` and upload `dist/` to any static host
+Hosted at **fde.sharathkrml.com**. Run `npm run build` and upload `dist/` to any static host
 (Netlify, Vercel, Cloudflare Pages, GitHub Pages). No server config needed — `base: "./"` plus
 `HashRouter` works at a domain root or a subpath.
 
-Social/link-preview assets live in `public/`: `og.png` (1200×630 card) and `favicon.svg`,
-referenced from `index.html`. If the domain ever changes, update the absolute URLs there
-(`canonical`, `og:url`, `og:image`, `twitter:image`).
+SEO/asset files live in `public/`: `favicon.svg`, `apple-touch-icon.png`, `icon-192.png`,
+`icon-512.png`, `og.png` (1200×630 card), `manifest.webmanifest`, `robots.txt`, and
+`sitemap.xml`; all are referenced from `index.html`, along with Open Graph, X/Twitter, and
+JSON-LD structured data. If the domain ever changes, update the absolute URLs in
+`index.html` (`canonical`, `og:url`, `og:image`, `twitter:image`) and `public/robots.txt` +
+`public/sitemap.xml`.
 
 ## What's inside
 
