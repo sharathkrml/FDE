@@ -21,8 +21,16 @@ export default function App() {
         </main>
       </div>
       <footer>
-        Sources: Vibe Engines FDE Roadmap 2026 · roadmap.sh Forward Deployed Engineer ·
-        <code> FDE.md</code>. Videos via YouTube; channels credited on each session.
+        <p>
+          Sources: Vibe Engines FDE Roadmap 2026 · roadmap.sh Forward Deployed Engineer ·
+          <code> FDE.md</code>. Videos via YouTube; channels credited on each session.
+        </p>
+        <p className="footer-by">
+          Built in public by{" "}
+          <a href="https://x.com/sharathkrml" target="_blank" rel="noopener">
+            @sharathkrml
+          </a>
+        </p>
       </footer>
     </div>
   );

@@ -15,8 +15,11 @@ export const allVideos: VideoWithStation[] = allStations.flatMap((s) =>
   s.res.map((r) => ({ ...r, stationId: s.id }))
 );
 
-export const totalVideos = allVideos.length;
-export const totalWithChapters = allVideos.filter((v) => v.chapters.length).length;
+// a few videos intentionally appear in two stations — count each once
+const uniqueVideos = [...new Map(allVideos.map((v) => [v.v, v])).values()];
+
+export const totalVideos = uniqueVideos.length;
+export const totalWithChapters = uniqueVideos.filter((v) => v.chapters.length).length;
 
 export const fmt = (s: number): string => {
   const h = Math.floor(s / 3600);

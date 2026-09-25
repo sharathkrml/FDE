@@ -28,9 +28,19 @@ npm run preview    # serve the built site
 
 Uses `HashRouter`, so `dist/` works from any static host or even `file://`.
 
+## Deploy
+
+Hosted at **sharathkrml.com**. Run `npm run build` and upload `dist/` to any static host
+(Netlify, Vercel, Cloudflare Pages, GitHub Pages). No server config needed — `base: "./"` plus
+`HashRouter` works at a domain root or a subpath.
+
+Social/link-preview assets live in `public/`: `og.png` (1200×630 card) and `favicon.svg`,
+referenced from `index.html`. If the domain ever changes, update the absolute URLs there
+(`canonical`, `og:url`, `og:image`, `twitter:image`).
+
 ## What's inside
 
-7 phases · 16 sessions · 83 video cards (81 unique) · **67 with real chapter timestamps**.
+7 phases · 16 sessions · 83 video cards (81 unique) · **65 with real chapter timestamps**.
 
 | Phase | Tag | What it covers |
 |---|---|---|
